@@ -207,7 +207,7 @@ def parse_arguments():
 
     # always required arguments
     required_args = parser_main.add_argument_group("required arguments")
-    required_args.add_argument('-u', '--userid', required=True, help="Apple ID for use with iTunes Connect")
+    required_args.add_argument('-u', '--userid', required=False, help="Apple ID for use with iTunes Connect")
 
     # template for commands that require authentication with password
     parser_auth_password = argparse.ArgumentParser(add_help=False)
